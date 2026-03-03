@@ -3,204 +3,329 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>الحضارة المصرية القديمة | موقع تعليمي</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>الحضارة المصرية القديمة | منصة تعليمية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <script src="https://kit.fontawesome.com/8f2a5e2b8a.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="hero" id="top">
     <nav class="navbar">
-      <div class="logo">مصر الخالدة</div>
+      <a class="logo" href="#top">مصر الخالدة</a>
       <ul class="nav-links">
-        <li><a href="#about">نبذة</a></li>
+        <li><a href="#stats">إحصائيات</a></li>
+        <li><a href="#history">التاريخ</a></li>
         <li><a href="#pharaohs">الفراعنة</a></li>
-        <li><a href="#temples">الآثار</a></li>
-        <li><a href="#daily">الحياة اليومية</a></li>
         <li><a href="#gallery">المعرض</a></li>
+        <li><a href="#quiz">الاختبار</a></li>
       </ul>
-      <a class="cta small" href="#about">استكشف الحضارة</a>
+      <a class="btn btn-outline" href="#cta">تعرف أكثر</a>
     </nav>
 
-    <div class="hero-content">
-      <span class="badge">موقع تعليمي</span>
+    <div class="hero-content reveal">
+      <p class="eyebrow">رحلة معرفية شاملة</p>
       <h1>الحضارة المصرية القديمة</h1>
       <p>
-        رحلة بصرية ومعرفية ممتعة لطلاب اليوم نحو أسرار أعظم حضارة عرفها التاريخ،
-        من النيل حتى الأهرامات.
+        استكشف أسرار المصريين القدماء عبر رحلة تعليمية طويلة تجمع التاريخ، العمارة، العلوم،
+        والأساطير في تجربة عربية حديثة وممتعة.
       </p>
-      <a class="cta" href="#about">استكشف الحضارة</a>
+      <a class="btn" href="#history">ابدأ الاستكشاف</a>
     </div>
-    <div class="hero-shape"></div>
+    <div class="hero-overlay"></div>
   </header>
 
   <main>
-    <section class="section about" id="about">
-      <div class="section-title">
-        <h2>نبذة عن الحضارة المصرية</h2>
-        <p>معلومات مبسطة تساعد الطلاب على فهم جذور الحضارة وعمقها الحضاري.</p>
+    <section class="stats section" id="stats">
+      <div class="section-header reveal">
+        <h2>شريط الإحصائيات</h2>
+        <p>أرقام سريعة تعكس عظمة حضارة استمرت آلاف السنين.</p>
       </div>
-      <div class="cards">
-        <article class="card reveal">
-          <h3>حضارة النيل</h3>
-          <p>قامت الحضارة المصرية على ضفاف نهر النيل الذي منحها الزراعة والخصوبة والاستقرار.</p>
+      <div class="stats-grid">
+        <article class="stat-card reveal">
+          <h3><span class="counter" data-target="3000">0</span>+</h3>
+          <p>سنة من الاستمرارية الحضارية</p>
         </article>
-        <article class="card reveal">
-          <h3>نظام الحكم</h3>
-          <p>اعتمد المصريون على نظام مركزي قوي يقوده الفرعون الذي يمثل قوة الدولة والعدالة.</p>
+        <article class="stat-card reveal">
+          <h3><span class="counter" data-target="170">0</span>+</h3>
+          <p>ملكًا وحاكمًا عبر الأسرات</p>
         </article>
-        <article class="card reveal">
-          <h3>الإيمان والهوية</h3>
-          <p>امتلك المصريون معتقدات دينية عميقة انعكست على فنونهم ومعابدهم وطقوسهم اليومية.</p>
+        <article class="stat-card reveal">
+          <h3><span class="counter" data-target="118">0</span>+</h3>
+          <p>هرمًا معروفًا في مصر</p>
+        </article>
+        <article class="stat-card reveal">
+          <h3><span class="counter" data-target="12">0</span></h3>
+          <p>إنجازات محورية في العلوم والهندسة</p>
         </article>
       </div>
     </section>
 
-    <section class="section pharaohs" id="pharaohs">
-      <div class="section-title">
+    <section class="history section" id="history">
+      <div class="section-header reveal">
+        <h2>نبذة تاريخية</h2>
+        <p>
+          بدأت الحضارة المصرية على ضفاف النيل، وتطورت عبر أنظمة سياسية وإدارية قوية،
+          وازدهرت فيها الفنون والعلوم والدين والعمارة.
+        </p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <h3>الدولة القديمة</h3>
+          <span>2686 – 2181 ق.م</span>
+          <p>عصر بناء الأهرامات وترسيخ السلطة المركزية في العاصمة ممفيس.</p>
+        </article>
+        <article class="timeline-item reveal">
+          <h3>الدولة الوسطى</h3>
+          <span>2055 – 1650 ق.م</span>
+          <p>مرحلة ازدهار إداري وثقافي وتعزيز مشاريع الري والزراعة على نطاق واسع.</p>
+        </article>
+        <article class="timeline-item reveal">
+          <h3>الدولة الحديثة</h3>
+          <span>1550 – 1069 ق.م</span>
+          <p>عصر الإمبراطورية والانتصارات العسكرية وبناء المعابد الكبرى في طيبة.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="pharaohs section" id="pharaohs">
+      <div class="section-header reveal">
         <h2>الملوك والفراعنة</h2>
-        <p>شخصيات عظيمة تركت بصمتها في التاريخ والعمارة والحروب.</p>
+        <p>شخصيات صنعت القرار السياسي والعسكري والديني في مصر القديمة.</p>
       </div>
       <div class="card-grid">
         <article class="media-card reveal">
-          <img src="https://images.unsplash.com/photo-1583267746897-2cf415887172?auto=format&fit=crop&w=800&q=80" alt="تمثال رمسيس الثاني" />
+          <img src="https://images.unsplash.com/photo-1578923931302-536b5975f66d?auto=format&fit=crop&w=900&q=80" alt="تمثال رمسيس الثاني" />
           <div>
             <h3>رمسيس الثاني</h3>
-            <p>يُعرف بمحاربه العظيم وبنائه لمعابد مهيبة أبرزها أبو سمبل.</p>
+            <p>من أشهر ملوك مصر، قاد معارك كبرى وشيّد معابد ضخمة مثل أبو سمبل.</p>
           </div>
         </article>
         <article class="media-card reveal">
-          <img src="https://images.unsplash.com/photo-1544986581-efac024faf62?auto=format&fit=crop&w=800&q=80" alt="قناع توت عنخ آمون" />
+          <img src="https://images.unsplash.com/photo-1544986581-efac024faf62?auto=format&fit=crop&w=900&q=80" alt="قناع توت عنخ آمون" />
           <div>
             <h3>توت عنخ آمون</h3>
-            <p>اشتهر بقبره المليء بالكنوز والذي أذهل العالم عند اكتشافه.</p>
+            <p>اشتهر عالميًا بكنوز مقبرته الذهبية التي كشفت الكثير عن الحياة الملكية.</p>
           </div>
         </article>
         <article class="media-card reveal">
-          <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80" alt="هرم خوفو" />
+          <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=80" alt="هرم خوفو" />
           <div>
             <h3>خوفو</h3>
-            <p>صاحب الهرم الأكبر وأحد أعظم مشاريع الهندسة في التاريخ القديم.</p>
+            <p>صاحب الهرم الأكبر في الجيزة، رمز العبقرية الهندسية المصرية القديمة.</p>
+          </div>
+        </article>
+        <article class="media-card reveal">
+          <img src="https://images.unsplash.com/photo-1519452575417-564c1401ecc0?auto=format&fit=crop&w=900&q=80" alt="ملكة مصرية" />
+          <div>
+            <h3>حتشبسوت</h3>
+            <p>ملكة قوية دعمت التجارة والعمارة، وخلدت اسمها بمعبد الدير البحري.</p>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="section temples" id="temples">
-      <div class="section-title">
+    <section class="battles section parallax" id="battles">
+      <div class="section-header reveal">
+        <h2>أشهر المعارك</h2>
+        <p>المعارك شكلت حدود الدولة وحافظت على قوتها الإقليمية.</p>
+      </div>
+      <div class="battle-cards">
+        <article class="battle-card reveal">
+          <h3>معركة قادش</h3>
+          <p>
+            مواجهة كبرى بين المصريين والحيثيين في عهد رمسيس الثاني، وانتهت بمعاهدة سلام
+            تُعد من أقدم المعاهدات في التاريخ.
+          </p>
+        </article>
+        <article class="battle-card reveal">
+          <h3>معارك توحيد مصر</h3>
+          <p>
+            حملات تاريخية ساهمت في توحيد الوجهين القبلي والبحري تحت راية دولة مركزية واحدة.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="temples section" id="temples">
+      <div class="section-header reveal">
         <h2>المعابد والآثار</h2>
-        <p>روائع معمارية خالدة تعكس عبقرية المهندسين المصريين.</p>
+        <p>شبكة معمارية مبهرة تجمع بين الدين والفن والهندسة.</p>
       </div>
-      <div class="image-grid">
-        <article class="image-card reveal">
-          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="الأهرامات" />
-          <div class="overlay">
-            <h3>الأهرامات</h3>
-            <p>رمز الخلود والهندسة الدقيقة.</p>
-          </div>
+      <div class="temple-grid">
+        <article class="temple-card reveal">
+          <h3>الأهرامات</h3>
+          <p>مقابر ملكية شاهقة تُظهر دقة القياس والبناء.</p>
         </article>
-        <article class="image-card reveal">
-          <img src="https://images.unsplash.com/photo-1601040878228-8a87fce2da9c?auto=format&fit=crop&w=800&q=80" alt="أبو سمبل" />
-          <div class="overlay">
-            <h3>أبو سمبل</h3>
-            <p>معبد مهيب نحت في الصخر.</p>
-          </div>
+        <article class="temple-card reveal">
+          <h3>معبد الكرنك</h3>
+          <p>واحد من أكبر المجمعات الدينية في العالم القديم.</p>
         </article>
-        <article class="image-card reveal">
-          <img src="https://images.unsplash.com/photo-1544986581-0f8f3c1c6a53?auto=format&fit=crop&w=800&q=80" alt="الكرنك" />
-          <div class="overlay">
-            <h3>الكرنك</h3>
-            <p>مجمع معابد يحكي قصة الآلهة والملوك.</p>
-          </div>
+        <article class="temple-card reveal">
+          <h3>معبد أبو سمبل</h3>
+          <p>تحفة منحوتة في الصخر تجسد هيبة الملك رمسيس الثاني.</p>
         </article>
       </div>
     </section>
 
-    <section class="section daily" id="daily">
-      <div class="section-title">
-        <h2>الحياة اليومية عند المصري القديم</h2>
-        <p>كيف عاش المصريون القدماء يومًا بيوم؟</p>
+    <section class="daily section" id="daily">
+      <div class="section-header reveal">
+        <h2>الحياة اليومية</h2>
+        <p>كيف عاش المصري القديم يومه بين العمل والمجتمع والطقوس؟</p>
       </div>
       <div class="icon-grid">
-        <div class="icon-card reveal">
-          <i class="fa-solid fa-seedling"></i>
-          <h3>الزراعة</h3>
-          <p>اعتمدوا على نهر النيل لزراعة القمح والشعير.</p>
-        </div>
-        <div class="icon-card reveal">
-          <i class="fa-solid fa-feather"></i>
-          <h3>الكتابة</h3>
-          <p>طوروا الهيروغليفية لتوثيق القصص والمعاملات.</p>
-        </div>
-        <div class="icon-card reveal">
-          <i class="fa-solid fa-shirt"></i>
-          <h3>الملابس</h3>
-          <p>استخدموا الكتان الخفيف للملابس اليومية.</p>
-        </div>
-        <div class="icon-card reveal">
-          <i class="fa-solid fa-bowl-rice"></i>
-          <h3>الطعام</h3>
-          <p>تناولوا الخبز والعسل والسمك والخضروات.</p>
-        </div>
+        <article class="icon-card reveal"><span>🌾</span><h3>الزراعة</h3><p>اعتمدت على فيضان النيل وتقويم موسمي دقيق.</p></article>
+        <article class="icon-card reveal"><span>🛠️</span><h3>الصناعة</h3><p>براعة في الفخار والنسيج وصناعة الحلي والأدوات.</p></article>
+        <article class="icon-card reveal"><span>👗</span><h3>الملابس</h3><p>أقمشة كتانية خفيفة تتناسب مع المناخ المصري.</p></article>
+        <article class="icon-card reveal"><span>🍞</span><h3>الطعام</h3><p>الخبز والبقول والأسماك شكلت أساس الغذاء اليومي.</p></article>
       </div>
     </section>
 
-    <section class="section achievements" id="achievements">
-      <div class="section-title">
-        <h2>الإنجازات</h2>
-        <p>ابتكارات مدهشة في مجالات مختلفة ما زالت تُلهمنا اليوم.</p>
+    <section class="writing section" id="writing">
+      <div class="section-header reveal">
+        <h2>الكتابة واللغة</h2>
+        <p>الهيروغليفية نظام كتابة بصري يجمع الرموز الصوتية والدلالية.</p>
       </div>
-      <div class="cards achievements-grid">
-        <article class="card reveal">
-          <h3>الطب</h3>
-          <p>وثق المصريون العلاجات والأدوية واهتموا بالعمليات الجراحية البسيطة.</p>
+      <div class="glyph-box reveal">
+        <p class="glyphs">𓂀 𓆣 𓇯 𓋹 𓉔 𓏏 𓂋</p>
+        <p>استُخدمت النقوش على جدران المعابد والمقابر لتوثيق التاريخ والعقائد.</p>
+      </div>
+    </section>
+
+    <section class="science section" id="science">
+      <div class="section-header reveal">
+        <h2>العلوم والإنجازات</h2>
+        <p>إبداع علمي سبق عصره وأسّس لتطورات لاحقة في حضارات كثيرة.</p>
+      </div>
+      <div class="science-grid">
+        <article class="flip-card reveal"><h3>الطب</h3><p>وصفات علاجية وجراحات بسيطة وتوثيق طبي على البرديات.</p></article>
+        <article class="flip-card reveal"><h3>الفلك</h3><p>رصد النجوم لتحديد المواسم والأعياد والتقويم السنوي.</p></article>
+        <article class="flip-card reveal"><h3>الهندسة</h3><p>تقنيات بناء متقدمة وتخطيط عمراني منظم للمدن والمعابد.</p></article>
+        <article class="flip-card reveal"><h3>التحنيط</h3><p>معرفة دقيقة بتشريح الجسم ومواد الحفظ طويلة الأمد.</p></article>
+      </div>
+    </section>
+
+    <section class="nile section" id="nile">
+      <div class="section-header reveal">
+        <h2>النيل وأهميته</h2>
+        <p>النيل هو شريان الحياة؛ به قامت الزراعة، وازدهرت التجارة، واستقرت المدن.</p>
+      </div>
+      <div class="wave-bg reveal">
+        <p>
+          من خلال الفيضانات السنوية تعلم المصريون إدارة المياه، وشق القنوات، وتقسيم الأراضي،
+          مما جعل مصر سلة غذاء مزدهرة في العالم القديم.
+        </p>
+      </div>
+    </section>
+
+    <section class="economy section" id="economy">
+      <div class="section-header reveal">
+        <h2>الاقتصاد والتجارة</h2>
+        <p>قوة مصر الاقتصادية اعتمدت على الإنتاج المحلي والانفتاح التجاري.</p>
+      </div>
+      <div class="split-grid">
+        <article class="split-card reveal">
+          <h3>التجارة الداخلية والخارجية</h3>
+          <p>نشطت حركة تبادل السلع بين الأقاليم ومع بلاد الشام والنوبة وبلاد بونت.</p>
         </article>
-        <article class="card reveal">
-          <h3>الفلك</h3>
-          <p>اعتمدوا على النجوم لتحديد المواسم وبناء التقويم السنوي.</p>
-        </article>
-        <article class="card reveal">
-          <h3>الهندسة</h3>
-          <p>بنوا المعابد والأهرامات بأبعاد دقيقة ما زالت تُدرّس حتى اليوم.</p>
-        </article>
-        <article class="card reveal">
-          <h3>الكتابة الهيروغليفية</h3>
-          <p>نظام كتابي بصري مميز حافظ على تاريخهم عبر آلاف السنين.</p>
+        <article class="split-card reveal">
+          <h3>العملات والمقايضة</h3>
+          <p>استُخدمت المقايضة ووحدات قياس القيمة مثل الدبن قبل انتشار العملات المعدنية.</p>
         </article>
       </div>
     </section>
 
-    <section class="section gallery" id="gallery">
-      <div class="section-title">
-        <h2>المعرض</h2>
-        <p>مجموعة صور تلهم حب الاستكشاف والتعلم.</p>
+    <section class="women section" id="women">
+      <div class="section-header reveal">
+        <h2>المرأة في مصر القديمة</h2>
+        <p>حظيت المرأة بمكانة اجتماعية وقانونية مميزة مقارنة بعديد من الحضارات المعاصرة.</p>
+      </div>
+      <div class="split-grid">
+        <article class="split-card reveal">
+          <h3>دور الملكات</h3>
+          <p>برزت ملكات مثل حتشبسوت ونفرتيتي في السياسة والدبلوماسية والرمزية الدينية.</p>
+        </article>
+        <article class="split-card reveal">
+          <h3>دور المرأة في المجتمع</h3>
+          <p>شاركت في إدارة الممتلكات، والعمل، والتعليم، وامتلكت حق التعاقد والإرث.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="myths section" id="myths">
+      <div class="section-header reveal">
+        <h2>الأساطير والآلهة</h2>
+        <p>عالم ديني غني يفسر الكون والحياة والموت برموز وقصص خالدة.</p>
+      </div>
+      <div class="myth-grid">
+        <article class="myth-card reveal"><h3>رع</h3><p>إله الشمس ورمز النور والخلق والتجدد اليومي.</p></article>
+        <article class="myth-card reveal"><h3>أوزوريس</h3><p>إله البعث والعالم الآخر والعدالة بعد الموت.</p></article>
+        <article class="myth-card reveal"><h3>إيزيس</h3><p>إلهة الأمومة والحماية والسحر والحكمة.</p></article>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="section-header reveal">
+        <h2>معرض الصور</h2>
+        <p>نافذة بصرية على جمال الآثار المصرية.</p>
       </div>
       <div class="gallery-grid">
-        <figure class="gallery-item reveal">
-          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="الأهرامات" />
-        </figure>
-        <figure class="gallery-item reveal">
-          <img src="https://images.unsplash.com/photo-1544986581-efac024faf62?auto=format&fit=crop&w=900&q=80" alt="قناع ذهبي" />
-        </figure>
-        <figure class="gallery-item reveal">
-          <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=80" alt="الأقصر" />
-        </figure>
-        <figure class="gallery-item reveal">
-          <img src="https://images.unsplash.com/photo-1601040878228-8a87fce2da9c?auto=format&fit=crop&w=900&q=80" alt="معبد أبو سمبل" />
-        </figure>
+        <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73fcb?auto=format&fit=crop&w=1200&q=80" alt="الأهرامات عند الغروب" /></figure>
+        <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1544986581-0f8f3c1c6a53?auto=format&fit=crop&w=1200&q=80" alt="أعمدة معبد الكرنك" /></figure>
+        <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1572252009286-268acec5ca0a?auto=format&fit=crop&w=1200&q=80" alt="نقوش مصرية قديمة" /></figure>
+        <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1601040878228-8a87fce2da9c?auto=format&fit=crop&w=1200&q=80" alt="معبد أبو سمبل" /></figure>
+        <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&q=80" alt="الجيزة" /></figure>
+        <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1611253169396-0d2f8f6fc7eb?auto=format&fit=crop&w=1200&q=80" alt="متحف وآثار" /></figure>
+      </div>
+    </section>
+
+    <section class="quiz section" id="quiz">
+      <div class="section-header reveal">
+        <h2>قسم تفاعلي: سؤال وجواب</h2>
+        <p>اختبر معلوماتك سريعًا في الحضارة المصرية القديمة.</p>
+      </div>
+      <div class="quiz-box reveal">
+        <h3 id="quiz-question">السؤال سيظهر هنا</h3>
+        <div id="quiz-options"></div>
+        <p id="quiz-feedback" aria-live="polite"></p>
+        <button class="btn" id="next-question">السؤال التالي</button>
+      </div>
+    </section>
+
+    <section class="cta-section section" id="cta">
+      <div class="cta-box reveal">
+        <h2>الماضي يلهم المستقبل</h2>
+        <p>كل أثر يحكي درسًا، وكل نقش يفتح بابًا جديدًا للتعلم والاكتشاف.</p>
+        <a class="btn" href="#top">تعرف أكثر</a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-content">
+    <div>
       <h3>الحضارة المصرية القديمة</h3>
-      <p>معًا نكتشف تاريخنا ونستلهم مستقبلنا.</p>
-      <span>© 2024 جميع الحقوق محفوظة</span>
+      <p>منصة تعليمية عربية لطلاب المعرفة والتاريخ.</p>
     </div>
+    <div>
+      <h4>روابط سريعة</h4>
+      <ul>
+        <li><a href="#history">نبذة تاريخية</a></li>
+        <li><a href="#science">العلوم</a></li>
+        <li><a href="#myths">الأساطير</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>وسائل تواصل</h4>
+      <p>البريد: learn@ancient-egypt.edu</p>
+      <p>منصات التواصل: @EgyptEdu</p>
+    </div>
+    <p class="copyright">© 2026 جميع الحقوق محفوظة</p>
   </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button id="close-lightbox" aria-label="إغلاق">✕</button>
+    <img id="lightbox-img" src="" alt="" />
+  </div>
 
   <script src="script.js"></script>
 </body>
