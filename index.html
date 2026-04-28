@@ -176,4 +176,109 @@
 
     <script src="script.js" defer></script>
   </body>
+=======
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مصر أم الدنيا</title>
+  <meta name="description" content="موقع عربي سينمائي فاخر يحتفي بعظمة مصر وتاريخها وثقافتها ومستقبلها." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=El+Messiri:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loader" id="loader">
+    <div class="loader-ring"></div>
+    <p>جارٍ تشكيل مشهد مصر السينمائي...</p>
+  </div>
+
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="ambient ambient-1"></div>
+  <div class="ambient ambient-2"></div>
+
+  <header class="hero" id="top">
+    <nav class="navbar glass">
+      <a href="#top" class="brand">مصر أم الدنيا</a>
+      <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#history">عظمة التاريخ</a></li>
+        <li><a href="#nile">هبة النيل</a></li>
+        <li><a href="#culture">العلم والثقافة</a></li>
+        <li><a href="#modern">مصر الحديثة</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-scene" id="heroScene">
+      <div class="sun"></div>
+      <div class="pyramids"></div>
+      <div class="dunes"></div>
+    </div>
+
+    <div class="hero-content reveal">
+      <h1 class="title">مصر أم الدنيا</h1>
+      <p class="subtitle">تُشرق مصر في محراب التاريخ كشمسٍ لا تغيب، فهي فجر الضمير ومنبع الحضارة التي علّمت البشرية أبجديات الحياة.</p>
+      <a class="btn-gold" href="#history">اكتشف عظمة مصر</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section reveal" id="history">
+      <div class="section-head">
+        <h2>عظمة التاريخ</h2>
+        <p>تقف الأهرامات في الجيزة شامخةً منذ آلاف السنين، شاهدةً على عبقرية هندسية أبهرت العالم. وبين أروقة معابد الأقصر والكرنك، تُروى حكايات الملوك الذين صنعوا المجد ونقشوا أسماءهم في سجل الخلود.</p>
+      </div>
+      <div class="cards history-cards">
+        <article class="card tilt-card glass"><h3>الأهرامات</h3><p>هندسة خالدة تتحدى الزمن.</p></article>
+        <article class="card tilt-card glass"><h3>الأقصر</h3><p>معابد تنبض بعظمة الملوك.</p></article>
+        <article class="card tilt-card glass"><h3>الكرنك</h3><p>صرح روحي وفني استثنائي.</p></article>
+      </div>
+    </section>
+
+    <section class="section section-nile reveal" id="nile">
+      <div class="section-head">
+        <h2>هبة النيل وعبقرية المكان</h2>
+        <p>لم يكن نهر النيل مجرد مجرى للمياه، بل كان شريان الحياة الذي منح مصر سر عظمتها. على ضفافه ازدهرت الزراعة، وتألق علم الفلك، وتشكلت واحدة من أعظم حضارات التاريخ.</p>
+      </div>
+      <div class="wave-box glass">
+        <div class="wave wave-1"></div>
+        <div class="wave wave-2"></div>
+        <div class="wave-content">نبض النيل... سر الاستمرار والحياة.</div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="culture">
+      <div class="section-head">
+        <h2>منارة العلم والثقافة</h2>
+        <p>من مكتبة الإسكندرية العريقة إلى الأزهر الشريف والجامعات الحديثة، ظلت مصر منارةً للعلم، ومنبعًا للفكر، وحاضنةً للإبداع الأدبي والفني.</p>
+      </div>
+      <div class="cards culture-cards">
+        <article class="card glass float-card"><span>📚</span><h3>مكتبة الإسكندرية</h3></article>
+        <article class="card glass float-card"><span>🕌</span><h3>الأزهر الشريف</h3></article>
+        <article class="card glass float-card"><span>🎭</span><h3>الفنون والآداب</h3></article>
+      </div>
+    </section>
+
+    <section class="section section-modern reveal" id="modern">
+      <div class="section-head">
+        <h2>مصر الحديثة</h2>
+        <p>تواصل مصر اليوم رحلتها نحو المستقبل بإرادة لا تعرف المستحيل، من خلال المدن الذكية، والمشروعات العملاقة، ورؤية تنموية تجمع بين عراقة التاريخ وطموحات الغد.</p>
+      </div>
+      <div class="stats-grid">
+        <article class="stat glass"><h3 class="counter" data-target="27">0</h3><p>مدينة جديدة ومجتمعات عمرانية</p></article>
+        <article class="stat glass"><h3 class="counter" data-target="100">0</h3><p>مشروع تنموي واستثماري محوري</p></article>
+        <article class="stat glass"><h3 class="counter" data-target="2030">0</h3><p>رؤية استراتيجية نحو المستقبل</p></article>
+      </div>
+      <div class="glow-lines" aria-hidden="true"></div>
+    </section>
+
+    <section class="quote reveal">
+      <blockquote>"مصر التي في خاطري وفي فمي، أحبها من كل روحي ودمي."</blockquote>
+      <p>إن عظمة مصر ليست في آثارها وحدها، بل في شعبها، وفي إرادتها، وفي قدرتها الدائمة على صناعة المجد من جديد.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
