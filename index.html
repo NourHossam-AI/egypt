@@ -1,5 +1,182 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="مصر أم الدنيا - تجربة سينمائية عربية فاخرة تحتفي بتاريخ مصر وثقافتها ومستقبلها."
+    />
+    <title>مصر أم الدنيا</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loader" aria-hidden="true">
+      <div class="loader-core"></div>
+      <p>جاري رسم ملامح المجد...</p>
+    </div>
+
+    <canvas id="particles" aria-hidden="true"></canvas>
+
+    <header class="hero" id="top">
+      <nav class="top-nav glass">
+        <a href="#top" class="brand">مصر أم الدنيا</a>
+        <div class="nav-links">
+          <a href="#history">التاريخ</a>
+          <a href="#nile">النيل</a>
+          <a href="#culture">الثقافة</a>
+          <a href="#modern">الحداثة</a>
+        </div>
+      </nav>
+
+      <div class="hero-scene" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="pyramids">
+          <span class="pyramid p1"></span>
+          <span class="pyramid p2"></span>
+          <span class="pyramid p3"></span>
+        </div>
+        <div class="dune dune-back"></div>
+        <div class="dune dune-front"></div>
+      </div>
+
+      <div class="hero-content reveal-up">
+        <h1>مصر أم الدنيا</h1>
+        <p>
+          تُشرق مصر في محراب التاريخ كشمسٍ لا تغيب، فهي فجر الضمير ومنبع الحضارة
+          التي علّمت البشرية أبجديات الحياة.
+        </p>
+        <a href="#history" class="btn-gold">اكتشف عظمة مصر</a>
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+    </header>
+
+    <main>
+      <section class="section" id="history">
+        <div class="section-head reveal-up">
+          <h2>عظمة التاريخ</h2>
+          <p>
+            تقف الأهرامات في الجيزة شامخةً منذ آلاف السنين، شاهدةً على عبقرية
+            هندسية أبهرت العالم. وبين أروقة معابد الأقصر والكرنك، تُروى حكايات
+            الملوك الذين صنعوا المجد ونقشوا أسماءهم في سجل الخلود.
+          </p>
+        </div>
+        <div class="cards-grid">
+          <article class="card tilt reveal-up">
+            <h3>الأهرامات الخالدة</h3>
+            <p>
+              تحفة معمارية تتحدى الزمن، وتروي قصة أمةٍ صنعت المستحيل بإبداع لا
+              يزال يدهش العالم.
+            </p>
+          </article>
+          <article class="card tilt reveal-up">
+            <h3>معابد الأقصر</h3>
+            <p>
+              ممرات من نورٍ ونقوشٍ ناطقة، حيث يلتقي الفن بالدين والسياسة في مشهد
+              حضاري فريد.
+            </p>
+          </article>
+          <article class="card tilt reveal-up">
+            <h3>روح الكرنك</h3>
+            <p>
+              أعمدة شاهقة تهمس بأسرار الملوك، وتكشف عظمة التخطيط والجمال في كل
+              زاوية.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-nile" id="nile">
+        <div class="section-head reveal-up">
+          <h2>هبة النيل وعبقرية المكان</h2>
+          <p>
+            لم يكن نهر النيل مجرد مجرى للمياه، بل كان شريان الحياة الذي منح مصر
+            سر عظمتها. على ضفافه ازدهرت الزراعة، وتألق علم الفلك، وتشكلت واحدة
+            من أعظم حضارات التاريخ.
+          </p>
+        </div>
+        <div class="nile-visual reveal-up" aria-hidden="true">
+          <div class="wave wave-1"></div>
+          <div class="wave wave-2"></div>
+          <div class="wave wave-3"></div>
+        </div>
+      </section>
+
+      <section class="section" id="culture">
+        <div class="section-head reveal-up">
+          <h2>منارة العلم والثقافة</h2>
+          <p>
+            من مكتبة الإسكندرية العريقة إلى الأزهر الشريف والجامعات الحديثة، ظلت
+            مصر منارةً للعلم، ومنبعًا للفكر، وحاضنةً للإبداع الأدبي والفني.
+          </p>
+        </div>
+        <div class="glass-grid">
+          <article class="glass-card reveal-up">
+            <span class="icon">📚</span>
+            <h3>الإسكندرية</h3>
+            <p>ذاكرة المعرفة وميناء الفكر المتجدد.</p>
+          </article>
+          <article class="glass-card reveal-up">
+            <span class="icon">🕌</span>
+            <h3>الأزهر الشريف</h3>
+            <p>منبر الاعتدال ورمز العمق العلمي.</p>
+          </article>
+          <article class="glass-card reveal-up">
+            <span class="icon">🎭</span>
+            <h3>الفن المصري</h3>
+            <p>صوت الشعوب وروح الحكاية العربية.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section modern" id="modern">
+        <div class="section-head reveal-up">
+          <h2>مصر الحديثة</h2>
+          <p>
+            تواصل مصر اليوم رحلتها نحو المستقبل بإرادة لا تعرف المستحيل، من خلال
+            المدن الذكية، والمشروعات العملاقة، ورؤية تنموية تجمع بين عراقة
+            التاريخ وطموحات الغد.
+          </p>
+        </div>
+        <div class="stats">
+          <article class="stat reveal-up">
+            <span class="num" data-target="27">0</span>
+            <p>مدينة ذكية ومجتمعات عمرانية متطورة</p>
+          </article>
+          <article class="stat reveal-up">
+            <span class="num" data-target="7000">0</span>
+            <p>كيلومتر من الشبكات والطرق الحديثة</p>
+          </article>
+          <article class="stat reveal-up">
+            <span class="num" data-target="100">0</span>
+            <p>مشروع تنموي عملاق بروح المستقبل</p>
+          </article>
+        </div>
+        <div class="glow-lines" aria-hidden="true"></div>
+      </section>
+
+      <section class="quote-section reveal-up">
+        <blockquote>
+          "مصر التي في خاطري وفي فمي، أحبها من كل روحي ودمي."
+        </blockquote>
+        <p>
+          إن عظمة مصر ليست في آثارها وحدها، بل في شعبها، وفي إرادتها، وفي قدرتها
+          الدائمة على صناعة المجد من جديد.
+        </p>
+      </section>
+    </main>
+
+    <button class="scroll-top" id="scrollTop" aria-label="العودة للأعلى">↑</button>
+
+    <script src="script.js" defer></script>
+  </body>
+=======
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -103,4 +280,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
